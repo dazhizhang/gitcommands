@@ -1,3 +1,6 @@
+# gitcommands
+gitcommands essential
+
 新建repository的时候，git给的提示是
 
 …or create a new repository on the command line
@@ -42,3 +45,7 @@ git push -u origin master
 git add .
 git commit -m "first commit"  
 git push -u origin master
+
+下面是参考文献：
+http://www.cnblogs.com/xrong/archive/2013/03/22/2975882.html
+http://blog.csdn.net/ithomer/article/details/7529022
