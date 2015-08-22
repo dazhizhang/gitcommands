@@ -1,0 +1,32 @@
+﻿ssh -T git@github.com
+
+git add . 　　
+
+卭r create a new repository on the command line
+
+
+echo # zhuanyuntiqu >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:IBPort/zhuanyuntiqu.git
+git push -u origin master
+卭r push an existing repository from the command line
+
+
+git remote add origin git@github.com:IBPort/zhuanyuntiqu.git
+git push -u origin master
+
+http://www.cnblogs.com/xrong/archive/2013/03/22/2975882.html
+
+// make a new depository
+mkdir Statics_warehouse_r
+
+// check status and version command
+git status
+git remote -v
+
+// each time make new changes to remote 
+git add .
+git commit -m "asdfasd"
+git push
