@@ -1,32 +1,44 @@
-﻿ssh -T git@github.com
+新建repository的时候，git给的提示是
 
-git add . 　　
-
-卭r create a new repository on the command line
+…or create a new repository on the command line
 
 
-echo # zhuanyuntiqu >> README.md
+echo # gitcommands >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin git@github.com:IBPort/zhuanyuntiqu.git
+git remote add origin git@github.com:dazhizhang/gitcommands.git
 git push -u origin master
-卭r push an existing repository from the command line
+…or push an existing repository from the command line
 
 
-git remote add origin git@github.com:IBPort/zhuanyuntiqu.git
+git remote add origin git@github.com:dazhizhang/gitcommands.git
 git push -u origin master
 
-http://www.cnblogs.com/xrong/archive/2013/03/22/2975882.html
+实际操作的经验总结是（git shell，使用于只有一个branch）：
 
-// make a new depository
-mkdir Statics_warehouse_r
+// 简单当前用户权限
+ssh -T git@github.com
 
-// check status and version command
-git status
-git remote -v
+// 初始化当前文件夹为一个git项目（可能也就是一个branch）
+git init
 
-// each time make new changes to remote 
+// 告诉本地git软件哪些文件是交给git处理的。 . 变成 * 也可以
+git add . 
+// 把所有本文件夹的（本branch）所有文本编辑器里面进行的新增，修改项目提交给本地的git软件
+git commit -m "first commit"
+
+// 连接本地branch到git服务器仓库 （只连接一次就可以）
+// 如果连接时提示已经存在，就忽略，继续后面命令
+git remote add origin git@github.com:IBPort/zhuanyuntiqu.git
+
+// 把本地变更提交给git服务器， 如果不考虑branch, 直接用 git push 也可以。
+git push -u origin master
+
+// 每次新增或者修改文件都需要执行的操作是下面三个，
+// 1. 每次都需要add是很奇怪的，但是本人测试不add就提交不成功。
+// 2. 每个commit 的名字都不同，记住别忘了写 -m 参数，表明是新增的commit label
+// 3. 如果只有一个branch就每次git push就可以了。
 git add .
-git commit -m "asdfasd"
-git push
+git commit -m "first commit"  
+git push -u origin master
