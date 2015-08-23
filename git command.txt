@@ -39,7 +39,7 @@ git remote add origin git@github.com:IBPort/zhuanyuntiqu.git
 git push -u origin master
 
 // 每次新增或者修改文件都需要执行的操作是下面三个，
-// 1. 每次都需要add是很奇怪的，但是本人测试不add就提交不成功。
+// 1. 每次都需要add，告诉git软件哪些文件准备commit
 // 2. 每个commit 的名字都不同，记住别忘了写 -m 参数，表明是新增的commit label
 // 3. 如果只有一个branch就每次git push就可以了。
 git add .
