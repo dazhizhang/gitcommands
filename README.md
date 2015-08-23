@@ -49,3 +49,11 @@ git push -u origin master
 下面是参考文献：
 http://www.cnblogs.com/xrong/archive/2013/03/22/2975882.html
 http://blog.csdn.net/ithomer/article/details/7529022
+
+git 有一个好的地方是如果服务器仓库发生了变化，
+本地仓库也发生了变化。
+如果先执行pull，可以把服务器的变化pull到本地来，本地发生的变化会保持不变
+（在本地发生变化的文件和服务器发生变化是不同的文件的情况下）
+然后可以再把本地的变化push到服务器上。
+
+
