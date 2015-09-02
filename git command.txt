@@ -51,3 +51,4 @@ http://www.cnblogs.com/xrong/archive/2013/03/22/2975882.html
 http://blog.csdn.net/ithomer/article/details/7529022
 http://www.ruanyifeng.com/blog/2014/06/git_remote.html
 https://github.com/GitbookIO/git/blob/master/zh/3b1652ba27b78115eac23a4bb00ea4fa/ef10bc7bf2dd11cddcf106e4f5a1a37a.md
+https://ihower.tw/blog/archives/2620
